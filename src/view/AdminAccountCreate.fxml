@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAccountCreateController">
+   <children>
+      <Label layoutX="20.0" layoutY="675.0" prefHeight="22.0" prefWidth="70.0" style="-fx-opacity: 0.5;" text="Lms v1.00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBackToLogin" layoutX="10.0" layoutY="5.0" onAction="#btnbtnBackToLoginOnAction" text="&lt;-">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="260.0" layoutY="63.0" prefHeight="595.0" prefWidth="672.0" style="-fx-background-color: F5EDED; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="70.0" layoutY="10.0" text="New Administrator Account" textFill="#ff7474">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="170.0" text="Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="220.0" text="Title">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="270.0" text="Date of Birth">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="320.0" text="Address">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="370.0" text="Contact No.">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="120.0" text="Admin ID">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="420.0" text="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="470.0" text="Confirm Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAdminID" layoutX="235.0" layoutY="120.0" prefHeight="31.0" prefWidth="375.0" promptText="Administrator ID">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAdminName" layoutX="235.0" layoutY="170.0" prefHeight="31.0" prefWidth="375.0" promptText="Name">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAdminTitle" layoutX="235.0" layoutY="220.0" prefHeight="31.0" prefWidth="375.0" promptText="Tilte">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAdminAddress" layoutX="235.0" layoutY="320.0" prefHeight="31.0" prefWidth="375.0" promptText="Address">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAdminContact" layoutX="235.0" layoutY="370.0" prefHeight="31.0" prefWidth="375.0" promptText="Contact Number">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="txtAdminDOB" layoutX="235.0" layoutY="270.0" promptText="Date Of Birth" />
+            <PasswordField fx:id="txtAdminPassword" layoutX="235.0" layoutY="420.0" prefHeight="25.0" prefWidth="251.0" />
+            <PasswordField fx:id="txtAdminConfirmPassword" layoutX="235.0" layoutY="470.0" prefHeight="25.0" prefWidth="251.0" />
+            <CheckBox layoutX="45.0" layoutY="515.0" mnemonicParsing="false" text="I agree to the terms and conditions" />
+            <JFXButton fx:id="btnAdminCreateAccount" buttonType="RAISED" layoutX="500.0" layoutY="530.0" onAction="#btnAdminCreateAccountOnAction" prefHeight="43.0" prefWidth="120.0" style="-fx-background-color: Lightblue; -fx-background-radius: 10;" text="Create">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

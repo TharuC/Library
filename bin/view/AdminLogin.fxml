@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginController">
+   <children>
+      <Pane layoutX="384.0" layoutY="277.0" prefHeight="324.0" prefWidth="452.0" style="-fx-background-color: FFF8F3;">
+         <children>
+            <JFXButton fx:id="btnAdminLogin" buttonType="RAISED" layoutX="331.0" layoutY="150.0" onAction="#btnAdminLoginOnAction" prefHeight="37.0" prefWidth="74.0" style="-fx-background-color: E7F0DC; -fx-background-radius: 10;" text="Login">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <PasswordField fx:id="btnAdminPassword" layoutX="155.0" layoutY="90.0" prefHeight="32.0" prefWidth="266.0" promptText="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="150.0" layoutY="200.0" text="haven't any account?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="lnkCreateAdminAccount" layoutX="130.0" layoutY="230.0" onAction="#lnkCreateAdminAccountOnAction" text="Create new account">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </Pane>
+      <Pane prefHeight="142.0" prefWidth="1200.0" style="-fx-background-color: F5EDED;">
+         <children>
+            <Label layoutX="180.0" layoutY="5.0" prefHeight="58.0" prefWidth="142.0" text="Library" textFill="#d4c62a">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="45.0" prefHeight="45.0" prefWidth="185.0" text="Management" textFill="#736c16">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="75.0" prefHeight="45.0" prefWidth="107.0" text="System" textFill="#736c16">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="420.0" layoutY="70.0" prefHeight="34.0" prefWidth="124.0" text="Members">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="580.0" layoutY="70.0" prefHeight="34.0" prefWidth="124.0" text="Category">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="740.0" layoutY="70.0" prefHeight="34.0" prefWidth="124.0" text="Stats">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="900.0" layoutY="70.0" prefHeight="34.0" prefWidth="124.0" text="Members">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fx:id="lmsLogo" fitHeight="287.0" fitWidth="306.0" layoutX="-3.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/LMS-Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="675.0" prefHeight="22.0" prefWidth="70.0" style="-fx-opacity: 0.5;" text="Lms v1.00">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="420.0" layoutY="200.0" text="Administrator Login">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="btnAdminID" layoutX="540.0" layoutY="320.0" prefHeight="34.0" prefWidth="264.0" promptText="Admin ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="400.0" layoutY="320.0" text="Admin ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="370.0" text="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBackToLogin" layoutX="10.0" layoutY="180.0" onAction="#btnbtnBackToLoginOnAction" text="&lt;-">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
